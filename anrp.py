@@ -7,6 +7,13 @@ import cv2
 
 class PyImageSearchANPR:
     def __init__(self, minAR=4, maxAR=6, debug=False):
+        '''_summary_
+
+        Args:
+            minAR (int, optional): _description_. Defaults to 4.
+            maxAR (int, optional): _description_. Defaults to 6.
+            debug (bool, optional): bool value, if true, debug mde will disp[lay pictures during] . Defaults to False.
+        '''    
         # store the minimum and maximum rectangular aspect ratio
         # values along with whether or not we are in debug mode
         self.minAR = minAR
@@ -14,6 +21,13 @@ class PyImageSearchANPR:
         self.debug = debug
     
     def debug_imshow(self, title, image, waitKey=False):
+        '''_summary_
+
+        Args:
+            title (_type_): _description_
+            image (_type_): _description_
+            waitKey (bool, optional): _description_. Defaults to False.
+        '''        
         # check to see if we are in debug mode, and if so, show the
         # image with the supplied title
         if self.debug:
