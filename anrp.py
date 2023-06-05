@@ -6,7 +6,7 @@ import imutils
 import cv2
 
 class PyImageSearchANPR:
-    def __init__(self, minAR=4, maxAR=6, debug=False):
+    def __init__(self, minAR=4, maxAR=8, debug=False):
 
         '''_summary
 

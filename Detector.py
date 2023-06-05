@@ -8,8 +8,8 @@ def cleanup_text(text):
     return "".join([c if ord(c) < 128 else "" for c in text]).strip()
 
 class Detector:
-    def __init__(self, psm = 7, clear_border = -1):
-        self.anrp = PyImageSearchANPR(debug = -1)
+    def __init__(self, psm = 8, clear_border = -1):
+        self.anrp = PyImageSearchANPR(debug = False)
         self.psm = psm
         self.clear_border = clear_border
 
