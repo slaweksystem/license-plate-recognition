@@ -7,7 +7,8 @@ import cv2
 
 class PyImageSearchANPR:
     def __init__(self, minAR=4, maxAR=6, debug=False):
-        '''_summary_
+
+        '''_summary
 
         Args:
             minAR (int, optional): _description_. Defaults to 4.
